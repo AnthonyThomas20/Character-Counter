@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Character Counter</title>
+	<link rel="stylesheet" href="style.css">
+	<style>
+		.container h3 {
+			-webkit-text-stroke-width: 0.3px;
+			-webkit-text-stroke-color: white;
+			text-shadow: 1px 2px #000000;
+		}
+		.count1 {
+			-webkit-text-stroke-width: 0.2px;
+			-webkit-text-stroke-color: white;
+		}
+		.count2 {
+			-webkit-text-stroke-width: 0.2px;
+			-webkit-text-stroke-color: white;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h3>Character Counter</h3>
+		<textarea id="comment" maxlength="300" placeholder="Type your text here..." onkeyup="countLetters(this.value)"></textarea>
+		<p>Total Characters: 
+			<span id="current_count" class="count1">0</span>
+			<span class="slash">/</span>
+			<span id="max_count" class="count2">300</span>
+		</p>
+	</div>
+	<script>
+		function countLetters(str) {
+			var charCount = str.length;
+			document.getElementById('current_count').innerHTML = charCount;
+
+			if(charCount<10) {
+				document.getElementById('current_count').style.color="#00FF00";
+			}
+			else if(charCount<20) {
+				document.getElementById('current_count').style.color="#12FF00";
+			}
+			else if(charCount<30) {
+				document.getElementById('current_count').style.color="#24FF00";
+			}
+			else if(charCount<40) {
+				document.getElementById('current_count').style.color="#35FF00";
+			}
+			else if(charCount<50) {
+				document.getElementById('current_count').style.color="#47FF00";
+			}
+			else if(charCount<60) {
+				document.getElementById('current_count').style.color="#58FF00";
+			}
+			else if(charCount<70) {
+				document.getElementById('current_count').style.color="#6AFF00";
+			}
+			else if(charCount<80) {
+				document.getElementById('current_count').style.color="#7CFF00";
+			}
+			else if(charCount<90) {
+				document.getElementById('current_count').style.color="#8DFF00";
+			}
+			else if(charCount<100) {
+				document.getElementById('current_count').style.color="#9FFF00";
+			}
+			else if(charCount<110) {
+				document.getElementById('current_count').style.color="#BOFF00";
+			}
+			else if(charCount<120) {
+				document.getElementById('current_count').style.color="#C2FF00";
+			}
+			else if(charCount<130) {
+				document.getElementById('current_count').style.color="#D4FF00";
+			}
+			else if(charCount<140) {
+				document.getElementById('current_count').style.color="#E5FF00";
+			}
+			else if(charCount<150) {
+				document.getElementById('current_count').style.color="#F7FF00";
+			}
+			else if(charCount<160) {
+				document.getElementById('current_count').style.color="#FFF600";
+			}
+			else if(charCount<170) {
+				document.getElementById('current_count').style.color="#FFE400";
+			}
+			else if(charCount<180) {
+				document.getElementById('current_count').style.color="#FFD300";
+			}
+			else if(charCount<190) {
+				document.getElementById('current_count').style.color="#FFC100";
+			}
+			else if(charCount<200) {
+				document.getElementById('current_count').style.color="#FFAF00";
+			}
+			else if(charCount<210) {
+				document.getElementById('current_count').style.color="#FF9E00";
+			}
+			else if(charCount<220) {
+				document.getElementById('current_count').style.color="#FF8C00";
+			}
+			else if(charCount<230) {
+				document.getElementById('current_count').style.color="#FF7B00";
+			}
+			else if(charCount<240) {
+				document.getElementById('current_count').style.color="#FF6900";
+			}
+			else if(charCount<250) {
+				document.getElementById('current_count').style.color="#FF5700";
+			}
+			else if(charCount<260) {
+				document.getElementById('current_count').style.color="#FF4600";
+			}
+			else if(charCount<270) {
+				document.getElementById('current_count').style.color="#FF3400";
+			}
+			else if(charCount<280) {
+				document.getElementById('current_count').style.color="#FF2300";
+			}
+			else if(charCount<290) {
+				document.getElementById('current_count').style.color="#FF1100";
+			}
+			else {
+				document.getElementById('current_count').style.color="#FF0000";
+			}
+		}
+	</script>
+</body>
+</html>
